@@ -100,7 +100,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"nome\",\n    \"ingredients\": \"lista de ingredientes\",\n    \"alcoholContent\": \"%\",\n    \"price\": 0,\n    \"category\": \"categoria\"\n}"
+					"raw": "{\n    \"name\": \"nome alterado PUT\",\n    \"ingredients\": \"lista de ingredientes\",\n    \"alcoholContent\": \"%\",\n    \"price\": 0,\n    \"category\": \"categoria\"\n}"
 				},
 				"url": {
 					"raw": "{{url}}/beers/1",
@@ -128,7 +128,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"nome\",\n    \"alcoholContent\": \"%\",\n    \"category\": \"categoria\"\n}"
+					"raw": "{\n    \"name\": \"nome alterado PATCH\",\n    \"alcoholContent\": \"%\",\n    \"category\": \"categoria\"\n}"
 				},
 				"url": {
 					"raw": "{{url}}/beers/1",
@@ -145,7 +145,7 @@
 			"response": []
 		},
 		{
-			"name": "Lista uma cerveja pelo id copy copy copy",
+			"name": "Lista uma cerveja pelo id",
 			"request": {
 				"method": "DELETE",
 				"header": [
