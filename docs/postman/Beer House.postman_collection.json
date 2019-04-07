@@ -1,0 +1,176 @@
+{
+	"info": {
+		"name": "Beer House",
+		"_postman_id": "3204321d-b0a1-2d92-db2f-ed8e7348a3de",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar todas as cervejas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"nome\",\n    \"ingredients\": \"lista de ingredientes\",\n    \"alcoholContent\": \"%\",\n    \"price\": 0,\n    \"category\": \"categoria\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/beers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"beers"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar nova cerveja",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"nome\",\n    \"ingredients\": \"lista de ingredientes\",\n    \"alcoholContent\": \"%\",\n    \"price\": 0,\n    \"category\": \"categoria\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/beers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"beers"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Lista uma cerveja pelo id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"nome\",\n    \"ingredients\": \"lista de ingredientes\",\n    \"alcoholContent\": \"%\",\n    \"price\": 0,\n    \"category\": \"categoria\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/beers/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"beers",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Altera informações de uma cerveja",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"nome\",\n    \"ingredients\": \"lista de ingredientes\",\n    \"alcoholContent\": \"%\",\n    \"price\": 0,\n    \"category\": \"categoria\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/beers/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"beers",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Altera uma ou mais informações de uma cerveja",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"nome\",\n    \"alcoholContent\": \"%\",\n    \"category\": \"categoria\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/beers/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"beers",
+						"1"
+					]
+				},
+				"description": "!!! Não é necessário passar todos os atributos. !!!"
+			},
+			"response": []
+		},
+		{
+			"name": "Lista uma cerveja pelo id copy copy copy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/beers/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"beers",
+						"1"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
